@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<!--
+The #page-top ID is part of the scrolling feature.
+The data-spy and data-target are part of the built-in Bootstrap scrollspy function.
+-->
+<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
+    {{ partial "header.html" . }}
+    <div class="partical-wrap">
+        <div class="text-wrap">
+              <img class="intro-img" src="{{ .Site.BaseURL }}img/keepcalm.png"/>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+
+    <!-- {{ partial "intro.html" . }} -->
+    <!-- {{ partial "about.html" . }} -->
+
+    <!-- JS Global Compulsory -->
+    <script src="{{ .Site.BaseURL }}plugins/jquery/jquery.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/jquery/jquery-migrate.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="{{ .Site.BaseURL }}plugins/smoothScroll.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/jquery.easing.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/pace/pace.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/jquery.parallax.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/counter/waypoints.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/counter/jquery.counterup.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/modernizr.js"></script>
+    <script src="{{ .Site.BaseURL }}plugins/login-signup-modal-window/js/main.js"></script> <!-- Gem jQuery -->
+
+    <!-- JS Page Level-->
+    <script src="{{ .Site.BaseURL }}js/one.app.js"></script>
+    <script src="{{ .Site.BaseURL }}js/forms/login.js"></script>
+    <script src="{{ .Site.BaseURL }}js/forms/contact.js"></script>
+    <script src="{{ .Site.BaseURL }}js/plugins/pace-loader.js"></script>
+    <script src="{{ .Site.BaseURL }}js/plugins/owl-carousel.js"></script>
+    <script src="{{ .Site.BaseURL }}js/plugins/revolution-slider.js"></script>
+    <script src="{{ .Site.BaseURL }}js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ .Site.BaseURL }}js/particles.js"></script>
+ 
+    <script>
+        jQuery(document).ready(function() {
+            App.init();
+            App.initCounter();
+            App.initParallaxBg();
+            LoginForm.initLoginForm();
+            ContactForm.initContactForm();
+            OwlCarousel.initOwlCarousel();
+            RevolutionSlider.initRSfullScreen();
+        });
+    </script>
+    <!--[if lt IE 9]>
+        <script src="{{ .Site.BaseURL }}plugins/respond.js"></script>
+        <script src="{{ .Site.BaseURL }}plugins/html5shiv.js"></script>
+        <script src="{{ .Site.BaseURL }}js/plugins/placeholder-IE-fixes.js"></script>
+        <script src="{{ .Site.BaseURL }}plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+        <script src="{{ .Site.BaseURL }}plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+</body>
+</html>

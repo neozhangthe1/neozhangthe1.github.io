@@ -1,0 +1,36 @@
+/* Add here all your css styles (customizations) */
+
+#particles-js {
+    /*background-image: url(http://vincentgarreau.com/particles.js/);*/
+    background-color: #081f2f;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.text-wrap {
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    margin-top: 150px;
+	text-align: center;
+}
+
+.intro-img {
+	width: 30%;
+}
+
+.intro-text {
+	color: white;
+	font-family:Helvetica,sans-serif;
+}
+
+.intro-lead-in {
+	font-size: 70px;
+	line-height: 120px;
+}
+
+.intro-second {
+	font-size: 30px;
+}

@@ -10,7 +10,7 @@
 
 .text-wrap {
     position: absolute;
-    top: 8%;
+    top: 85px;
     height: 0;
     width: 100%;
     /*margin-top: 150px;*/
@@ -18,7 +18,7 @@
 }
 
 .intro-img {
-	width: 65%;
+	width: 60%;
 }
 
 .intro-text {
